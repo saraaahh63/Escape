@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: #000;
+    overflow: hidden;
+}
+
+.block-wrap {
+  background-size: 100% 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.block {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  width: 10%;
+  padding: 5%;
+  line-height: 0;
+  background: #000;
+  -webkit-transition: all 0.2s ease-in;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition: all 0.2s ease-in;
+  -moz-transition-delay: 0.4s;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.4s;
+  text-align: center;
+  font-size: 100%;
+}
+
+.off {
+  opacity: 0.3;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.p_off{
+  opacity: 0.9;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  color: red;
+}
+
+#title{
+  font-size: 300%;
+
+}
+
+#name{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: grey;
+}
+
+.proceed{
+  display: inline-block;
+  float: left;
+  color: lightgreen;
+  width: 10%;
+  padding: 5%;
+  padding-left: 4%;
+  line-height: 0;
+  background: #000;
+  -webkit-transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 0.2s ease-in;
+  -moz-transition-delay: 0s;
+  transition: all 0.2s ease-in;
+  transition-delay: 0s;
+  text-align: center;
+  font-size: 200%;
+}
+
+.proceed:hover{
+    color: white;
+    background-color: lightgreen;
+
+}
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: +2.5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
