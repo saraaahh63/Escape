@@ -1,9 +1,9 @@
 # Escape
 
-Interactive Video & Website
+#### Interactive Short Film
 
 Created by Sarah Tahir, Marina Pascual and Owen Zhang
 
-Communications Lab, NYU Shanghai Fall 2017
+__Communications Lab, NYU Shanghai Fall 2017__
 
 Open index.html within the folder "0-cover" to view the website.
